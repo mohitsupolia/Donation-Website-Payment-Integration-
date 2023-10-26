@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::section})">
+<head>
+    <meta charset="UTF-8" />
+    <title>Payment form</title>
+</head>
+<body>
+<section class="banner">
+<div class="title" style="font-size:3vw;">Give a Helping Hand: Donate for a Brighter Future</div>
+    <div class="container">
+        
+            <div class="col-md-4 offset-md-9">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="form-group text-center">
+                            <img src="#" style="width: 200px" th:src="@{/images/NGO.png}" alt="" />
+                            <h4 class="my_2" style="font-size:1vw;">Please Donate the Payment for NGO !!!</h4>
+                            <input id="payment_field" type="text" name="payment" class="form-control" placeholder="Enter Amount Here" />
+                            <div class="my-3">
+                                <button type="submit" onclick="paymentStart()" class="btn btn-primary btn-block">PAY</button>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
